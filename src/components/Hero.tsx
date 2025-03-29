@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial from-blue-50 to-transparent z-0 opacity-70"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-blue-50 to-transparent dark:from-blue-950/30 dark:to-transparent z-0 opacity-70"></div>
       
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -21,11 +21,11 @@ const Hero = () => {
             Hi, I'm <span className="text-gradient">Your Name</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-medium mb-8 text-gray-700 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-2xl md:text-3xl font-medium mb-8 text-gray-700 dark:text-gray-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Web Developer & Designer
           </h2>
           
-          <p className="text-lg text-gray-600 mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             I create beautiful, responsive websites with clean code and user-centered design.
             Let's bring your ideas to life.
           </p>
@@ -35,7 +35,7 @@ const Hero = () => {
               Explore My Work
             </Button>
             
-            <Button variant="outline" className="rounded-full" onClick={() => {
+            <Button variant="outline" className="rounded-full dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800" onClick={() => {
               const contactSection = document.getElementById('contact');
               if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button onClick={scrollToAbout} className="text-gray-600 hover:text-gray-900 transition-colors">
+        <button onClick={scrollToAbout} className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition-colors">
           <ArrowDownCircle size={32} />
         </button>
       </div>
