@@ -25,10 +25,10 @@ const Skills = () => {
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            <span className="text-gradient">My Skills</span>
+            <span className="text-gradient">Technical Skills</span>
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            I've developed a diverse set of skills throughout my career, 
+            I've developed a diverse set of skills throughout my study and work experience, 
             allowing me to create comprehensive web solutions.
           </p>
           

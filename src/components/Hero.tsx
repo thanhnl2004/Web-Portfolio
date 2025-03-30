@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -18,16 +16,15 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Hi, I'm <span className="text-gradient">Your Name</span>
+            Hi, I'm <span className="text-gradient">Thanh Nguyen</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-medium mb-8 text-gray-700 dark:text-gray-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Web Developer & Designer
+            CS student @ ANU
           </h2>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            I create beautiful, responsive websites with clean code and user-centered design.
-            Let's bring your ideas to life.
+            I love building webapps that are impactful.
           </p>
           
           <div className="flex justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>

@@ -16,19 +16,20 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Who am I?</h3>
               <p className="text-gray-700">
-                I'm a passionate web developer with a strong foundation in front-end and back-end technologies. 
-                With 5 years of experience, I specialize in creating responsive, accessible, and 
-                performance-optimized web applications.
+                I'm a a 3rd year Computer Science student @ ANU. My interest is in Software Engineering and Full Stack Development.
               </p>
-              <p className="text-gray-700">
-                My journey in web development started with a curiosity about how websites work, and it has 
-                evolved into a fulfilling career where I get to solve problems and create digital experiences 
-                that make a difference.
-              </p>
-              <p className="text-gray-700">
-                When I'm not coding, you can find me hiking in the mountains, reading sci-fi novels, 
-                or experimenting with new cooking recipes.
-              </p>
+              <div className="text-gray-700 flex flex-col gap-2">
+                <span>My personal interests:</span>
+                <li>
+                  <span><strong>Basketball</strong> (Favourite team:<span className="text-gradient"><a href="https://www.nba.com/cavaliers" target="_blank" rel="noopener noreferrer"> Cleveland Cavaliers</a></span>)</span>
+                </li>
+                <li>
+                  <span><strong>Football</strong> (Favourite team:<span className="text-gradient"><a href="https://www.manutd.com" target="_blank" rel="noopener noreferrer"> Manchester United</a></span>)</span>
+                </li>
+                <li>
+                  <span><strong>Pool</strong> and <strong>Table Tennis</strong></span>
+                </li>
+              </div>
               
               <div className="pt-4">
                 <Button className="rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
@@ -40,34 +41,50 @@ const About = () => {
             <div className="bg-white rounded-2xl shadow-xl p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 opacity-10 rounded-bl-full"></div>
               
-              <h3 className="text-xl font-semibold mb-6">My Journey</h3>
+              <h3 className="text-xl font-semibold mb-6">Experience</h3>
               
               <div className="space-y-6">
                 <div className="relative pl-8 border-l-2 border-blue-200">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                  <h4 className="font-medium">Senior Web Developer</h4>
-                  <p className="text-sm text-gray-500">Company Name (2021 - Present)</p>
-                  <p className="text-sm text-gray-700 mt-1">Leading development of enterprise web applications.</p>
+                  <h4 className="font-semibold">Lyra Technologies</h4>
+                  <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Feb 2025 - Mar 2025)</span></p>
+                  <p className="text-sm text-gray-700 mt-1">Developed a web application for a client in the Fintech industry.</p>
                 </div>
                 
                 <div className="relative pl-8 border-l-2 border-blue-200">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                  <h4 className="font-medium">Front-end Developer</h4>
-                  <p className="text-sm text-gray-500">Company Name (2019 - 2021)</p>
+                  <h4 className="font-semibold">Pookie</h4>
+                  <p className="text-sm font-semibold text-gray-500">Software Engineer <span className="font-normal">(Feb 2025 - Present)</span></p>
                   <p className="text-sm text-gray-700 mt-1">Worked on responsive web design projects.</p>
                 </div>
                 
                 <div className="relative pl-8 border-l-2 border-blue-200">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                  <h4 className="font-medium">Junior Developer</h4>
-                  <p className="text-sm text-gray-500">Company Name (2018 - 2019)</p>
+                  <h4 className="font-semibold">FPT Software</h4>
+                  <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Nov 2024 - Jan 2025)</span></p>
+                  <p className="text-sm text-gray-700 mt-1">Started my journey as a web developer.</p>
+                </div>
+  
+                <div className="relative pl-8 border-l-2 border-blue-200">
+                  <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                  <h4 className="font-semibold">Australian National University</h4>
+                  <p className="text-sm font-semibold text-gray-500">Undergraduate Researcher <span className="font-normal">(May 2024 - Sep 2024)</span></p>
+                  <p className="text-sm text-gray-700 mt-1">Worked on a project to develop a web application for a client in the Fintech industry.</p>
+                </div>
+
+                                
+                <div className="relative pl-8 border-l-2 border-blue-200">
+                  <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                  <h4 className="font-semibold">Mobifone</h4>
+                  <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Nov 2023 - Jan 2024)</span></p>
                   <p className="text-sm text-gray-700 mt-1">Started my journey as a web developer.</p>
                 </div>
                 
+                <h3 className="text-xl font-semibold mb-6">Education</h3>
                 <div className="relative pl-8">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
-                  <h4 className="font-medium">Computer Science Degree</h4>
-                  <p className="text-sm text-gray-500">University Name (2014 - 2018)</p>
+                  <h4 className="font-bold">Australian National University</h4>
+                  <p className="text-sm font-semibold text-gray-500">Bachelor of Information Technology, Major in Software Development <span className="font-normal">(Expected Graduation: 2025)</span></p>
                 </div>
               </div>
             </div>

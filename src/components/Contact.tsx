@@ -21,7 +21,7 @@ const Contact = () => {
             <span className="text-gradient">Get In Touch</span>
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Have a project in mind or want to say hello? Feel free to reach out, and I'll get back to you as soon as possible.
+            Have an opportunitity for me, or want to collaborate? Feel free to reach out, and I'll get back to you as soon as possible.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -88,32 +88,32 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                 
                 <div className="space-y-6">
-                  <div className="flex items-start">
+                  <div className="flex items-center">
                     <Mail className="mr-4 text-blue-600" />
                     <div>
                       <h4 className="text-sm font-medium text-gray-900">Email</h4>
-                      <a href="mailto:your-email@example.com" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
-                        your-email@example.com
+                      <a href="mailto:lethanh300504@gmail.com" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                        lethanh300504@gmail.com
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
+                  <div className="flex items-center">
                     <Phone className="mr-4 text-blue-600" />
                     <div>
                       <h4 className="text-sm font-medium text-gray-900">Phone</h4>
-                      <a href="tel:+1234567890" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
-                        +1 (234) 567-890
+                      <a href="tel:+61492819785" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
+                        +61 492 819 785
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
+                  <div className="flex items-center">
                     <MapPin className="mr-4 text-blue-600" />
                     <div>
                       <h4 className="text-sm font-medium text-gray-900">Location</h4>
                       <p className="text-sm text-gray-600">
-                        San Francisco, California
+                        Canberra, ACT, Australia
                       </p>
                     </div>
                   </div>
@@ -123,13 +123,13 @@ const Contact = () => {
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h3 className="text-xl font-semibold mb-6">Availability</h3>
                 <p className="text-gray-600 mb-4">
-                  I'm currently open to freelance projects, full-time positions, and consulting opportunities.
+                  I'm looking for new grad opportunties in Software Engineering and Full Stack Development.
                 </p>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                   <h4 className="font-medium text-blue-700 mb-1">Current Status</h4>
                   <p className="text-sm text-blue-600">
                     <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-                    Available for new projects
+                    Open to work
                   </p>
                 </div>
               </div>

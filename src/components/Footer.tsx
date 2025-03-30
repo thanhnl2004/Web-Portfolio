@@ -13,11 +13,11 @@ const Footer = () => {
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold mb-2">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                  Your Name
+                  Thanh Nguyen
                 </span>
               </h2>
               <p className="text-gray-400 text-sm">
-                Web Developer & Designer
+                Software Engineer & CS Student
               </p>
             </div>
             
@@ -64,13 +64,13 @@ const Footer = () => {
                 <h3 className="text-lg font-medium mb-3">Contact</h3>
                 <ul className="space-y-2">
                   <li className="text-gray-400 text-sm">
-                    your-email@example.com
+                    lethanh300504@example.com
                   </li>
                   <li className="text-gray-400 text-sm">
-                    +1 (234) 567-890
+                    +61 492 819 785
                   </li>
                   <li className="text-gray-400 text-sm">
-                    San Francisco, CA
+                    Canberra, ACT, Australia
                   </li>
                 </ul>
               </div>
@@ -81,7 +81,7 @@ const Footer = () => {
           
           <div className="flex flex-col-reverse md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mt-4 md:mt-0">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Thanh Nguyen. All rights reserved.
             </p>
             
             <div className="flex space-x-4">
