@@ -1,9 +1,40 @@
-
 import React from 'react';
 import { 
   Code2, Figma, Globe, Database, Server, Cpu, 
   Layers, LayoutGrid, Palette, Gauge, Lock, Atom 
 } from 'lucide-react';
+import { IconCloud } from './magicui/icon-cloud';
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "c",
+  "haskell",
+  "python",
+  "java",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazons3",
+  "postgresql",
+  "supabase",
+  "vercel",
+  "docker",
+  "git",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "figma",
+  "springboot",
+  "tailwindcss",
+  "trpc",
+  "drizzle"
+];
 
 type SkillCardProps = {
   icon: React.ReactNode;
@@ -19,10 +50,46 @@ const SkillCard = ({ icon, title, description }: SkillCardProps) => (
   </div>
 );
 
+const formatTagName = (tag: string): string => {
+  // Special case formatting
+  if (tag === 'nodedotjs') return 'Node.js';
+  if (tag === 'nextdotjs') return 'Next.js';
+  if (tag === 'amazons3') return 'AWS S3';
+  if (tag === 'visualstudiocode') return 'VS Code';
+  if (tag === 'tailwindcss') return 'Tailwind CSS';
+  if (tag === "html5") return "HTML";
+  if (tag === "css3") return "CSS";
+  if (tag === "trpc") return "tRPC";
+  
+  
+  // Generic formatting - capitalize first letter and remove numbers
+  return tag.charAt(0).toUpperCase() + tag.slice(1).replace(/\d/g, '');
+};
+
+const SkillCardList = ({ tags }: { tags: string[] }) => {
+  return (
+    <div className="flex flex-wrap gap-2 mb-4">
+    {tags.map((tag, index) => (
+      <span 
+        key={index}
+        className="text-sm font-medium px-3 py-1 rounded-full bg-blue-50 text-blue-600"
+      >
+        {formatTagName(tag)}
+      </span>
+    ))}
+  </div>
+  );
+};
+
 const Skills = () => {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  );
+
   return (
     <section id="skills" className="section-padding">
       <div className="container mx-auto">
+
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             <span className="text-gradient">Technical Skills</span>
@@ -31,8 +98,15 @@ const Skills = () => {
             I've developed a diverse set of skills throughout my study and work experience, 
             allowing me to create comprehensive web solutions.
           </p>
+
+          <div className="flex justify-center items-center gap-4">
+            <IconCloud images={images} />
+            <SkillCardList tags={slugs} />
+          </div>
+
+
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCard 
               icon={<Code2 size={32} />} 
               title="Front-end Development" 
@@ -86,7 +160,7 @@ const Skills = () => {
               title="Authentication" 
               description="OAuth, JWT, Firebase Auth, Role-based access control"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

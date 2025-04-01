@@ -2,6 +2,7 @@ import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InteractiveHoverButton } from '@/components/ui/interactive-button';
 import { Particles } from '@/components/ui/particles';
+import { ShimmerButton } from '@/components/magicui/shimmer-button';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -15,10 +16,10 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Particles 
-          className="absolute inset-0" 
+          className="absolute inset-0 z-0" 
           quantity={100} 
-          staticity={30} 
-          color="#4a85e8" 
+          ease={80}
+          color="#000000" 
         />
       </div>
       
@@ -43,14 +44,17 @@ const Hero = () => {
               Explore My Work
             </InteractiveHoverButton>
             
-            <Button variant="outline" className="rounded-full text-sm dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800" onClick={() => {
+            <ShimmerButton 
+              className="rounded-full text-sm dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+              shimmerSize="0.1em"
+              onClick={() => {
               const contactSection = document.getElementById('contact');
               if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}>
               Contact Me
-            </Button>
+            </ShimmerButton>
           </div>
         </div>
       </div>

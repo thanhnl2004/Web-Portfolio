@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -40,7 +40,7 @@ const Navbar = () => {
       )}
     >
       <div className="container flex justify-between items-center py-4">
-        <a href="#" className="text-xl font-bold">
+        <a href="" className="text-xl font-bold">
           <span className="text-gradient">Portfolio</span>
         </a>
 
@@ -61,12 +61,15 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
             <Github size={20} />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
             <Linkedin size={20} />
+          </a>
+          <a href="https://www.instagram.com/_thanh.nl_/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 dark:text-gray-400 dark:hover:text-white transition-colors">
+            <Instagram size={20} />
           </a>
           <a href="mailto:your-email@example.com" className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors">
             <Mail size={20} />
