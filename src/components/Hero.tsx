@@ -1,5 +1,7 @@
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { InteractiveHoverButton } from '@/components/ui/interactive-button';
+import { Particles } from '@/components/ui/particles';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -11,6 +13,15 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Particles 
+          className="absolute inset-0" 
+          quantity={100} 
+          staticity={30} 
+          color="#4a85e8" 
+        />
+      </div>
+      
       <div className="absolute inset-0 bg-gradient-radial from-blue-50 to-transparent dark:from-blue-950/30 dark:to-transparent z-0 opacity-70"></div>
       
       <div className="container mx-auto px-4 z-10">
@@ -28,11 +39,11 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button onClick={() => scrollToAbout()} className="rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+            <InteractiveHoverButton onClick={() => scrollToAbout()} className="rounded-full text-sm">
               Explore My Work
-            </Button>
+            </InteractiveHoverButton>
             
-            <Button variant="outline" className="rounded-full dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800" onClick={() => {
+            <Button variant="outline" className="rounded-full text-sm dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800" onClick={() => {
               const contactSection = document.getElementById('contact');
               if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });

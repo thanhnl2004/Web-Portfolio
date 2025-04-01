@@ -36,19 +36,19 @@ const Skills = () => {
             <SkillCard 
               icon={<Code2 size={32} />} 
               title="Front-end Development" 
-              description="HTML, CSS, JavaScript, React, Vue, TypeScript, Tailwind CSS"
+              description="Next.js, React, TailwindCSS, HTML, CSS"
             />
             
             <SkillCard 
               icon={<Database size={32} />} 
               title="Back-end Development" 
-              description="Node.js, Express, Python, Django, RESTful APIs"
+              description="Spring Boot, tRPC, Express.js, Node.js, Flask"
             />
             
             <SkillCard 
               icon={<Figma size={32} />} 
               title="UI/UX Design" 
-              description="Figma, Adobe XD, User Research, Wireframing, Prototyping"
+              description="Figma, Framer"
             />
             
             <SkillCard 
@@ -60,13 +60,13 @@ const Skills = () => {
             <SkillCard 
               icon={<Server size={32} />} 
               title="Database" 
-              description="MongoDB, PostgreSQL, MySQL, Firebase, Redis"
+              description="PostgreSQL, MySQL, Supabase, Neon"
             />
             
             <SkillCard 
               icon={<Cpu size={32} />} 
               title="DevOps" 
-              description="Git, CI/CD, Docker, AWS, Netlify, Vercel"
+              description="Git, Vetcel, AWS S3, CI/CD"
             />
             
             <SkillCard 
