@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button';
 import { InteractiveHoverButton } from '@/components/ui/interactive-button';
 import { Particles } from '@/components/ui/particles';
 import { ShimmerButton } from '@/components/magicui/shimmer-button';
-import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
-import { Globe } from '@/components/ui/globe';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -38,12 +36,6 @@ const Hero = () => {
       </div>
       
       <div className="absolute inset-0 bg-gradient-radial from-blue-50 to-transparent dark:from-blue-950/30 dark:to-transparent z-0 opacity-70"></div>
-      
-      <div className={`absolute w-full h-full pointer-events-none transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-        <div className="relative w-full h-full">
-          <Globe className="mx-auto mt-16 opacity-20 dark:opacity-30" />
-        </div>
-      </div>
       
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -79,21 +71,6 @@ const Hero = () => {
             }}>
               Contact Me
             </ShimmerButton>
-          </div>
-          
-          <div className={`mt-16 transition-all duration-700 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-               style={{ transitionDelay: '1000ms' }}>
-            <OrbitingCircles 
-              path={true} 
-              radius={120} 
-              speed={0.7} 
-              className="mx-auto">
-              <div className="size-6 rounded-full bg-gradient-to-br from-blue-400 to-blue-600"></div>
-              <div className="size-4 rounded-full bg-gradient-to-br from-purple-400 to-purple-600"></div>
-              <div className="size-5 rounded-full bg-gradient-to-br from-green-400 to-green-600"></div>
-              <div className="size-3 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600"></div>
-              <div className="size-5 rounded-full bg-gradient-to-br from-pink-400 to-pink-600"></div>
-            </OrbitingCircles>
           </div>
         </div>
       </div>
