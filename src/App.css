@@ -1,7 +1,6 @@
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -25,6 +24,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes page-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: page-fade-in 1s ease-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {
