@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Code2, Figma, Globe, Database, Server, Cpu, 
@@ -70,7 +69,7 @@ const formatTagName = (tag: string): string => {
 
 const SkillTagList = ({ tags }: { tags: string[] }) => {
   return (
-    <div className="flex flex-wrap justify-center gap-2 my-8 px-4">
+    <div className="flex flex-wrap justify-center gap-2 my-4 px-4">
       {tags.map((tag, index) => (
         <span 
           key={index}
@@ -101,18 +100,23 @@ const Skills = () => {
             allowing me to create comprehensive web solutions.
           </p>
 
-          {/* Show IconCloud on larger screens, SkillTagList on mobile */}
-          <div className="relative">
-            {!isMobile ? (
+          {/* For mobile, show only SkillTagList */}
+          {isMobile ? (
+            <SkillTagList tags={slugs} />
+          ) : (
+            /* For desktop, show both IconCloud and SkillTagList */
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
               <div className="flex justify-center items-center mb-8">
                 <IconCloud images={images} />
               </div>
-            ) : (
-              <SkillTagList tags={slugs} />
-            )}
-          </div>
+              <div className="w-full md:w-1/2">
+                <SkillTagList tags={slugs} />
+              </div>
+            </div>
+          )}
 
-          {/* Additional skill cards section can be uncommented if needed
+          {/* Additional skill cards section can be uncommented if needed */}
+          {/*
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCard 
               icon={<Code2 size={32} />} 
@@ -149,7 +153,8 @@ const Skills = () => {
               title="DevOps" 
               description="Git, Vetcel, AWS S3, CI/CD"
             />
-          </div> */}
+          </div> 
+          */}
         </div>
       </div>
     </section>
