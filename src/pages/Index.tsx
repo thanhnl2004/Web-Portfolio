@@ -13,6 +13,17 @@ const Index = () => {
 
   useEffect(() => {
     setIsLoaded(true);
+    
+    // Add event listener for resize to handle responsive components
+    const handleResize = () => {
+      // Force a rerender on certain size changes if needed
+      setIsLoaded(false);
+      setTimeout(() => setIsLoaded(true), 10);
+    };
+    
+    // Optional: add a throttled resize handler if needed for performance
+    // window.addEventListener('resize', handleResize);
+    // return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (

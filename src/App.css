@@ -52,3 +52,20 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { 
   Code2, Figma, Globe, Database, Server, Cpu, 
   Layers, LayoutGrid, Palette, Gauge, Lock, Atom 
 } from 'lucide-react';
 import { IconCloud } from './magicui/icon-cloud';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const slugs = [
   "typescript",
@@ -66,22 +68,23 @@ const formatTagName = (tag: string): string => {
   return tag.charAt(0).toUpperCase() + tag.slice(1).replace(/\d/g, '');
 };
 
-const SkillCardList = ({ tags }: { tags: string[] }) => {
+const SkillTagList = ({ tags }: { tags: string[] }) => {
   return (
-    <div className="flex flex-wrap gap-2 mb-4">
-    {tags.map((tag, index) => (
-      <span 
-        key={index}
-        className="text-sm font-medium px-3 py-1 rounded-full bg-blue-50 text-blue-600"
-      >
-        {formatTagName(tag)}
-      </span>
-    ))}
-  </div>
+    <div className="flex flex-wrap justify-center gap-2 my-8 px-4">
+      {tags.map((tag, index) => (
+        <span 
+          key={index}
+          className="text-sm font-medium px-3 py-1 rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300 transition-all hover:scale-105 mb-2"
+        >
+          {formatTagName(tag)}
+        </span>
+      ))}
+    </div>
   );
 };
 
 const Skills = () => {
+  const isMobile = useIsMobile();
   const images = slugs.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
   );
@@ -89,24 +92,28 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding">
       <div className="container mx-auto">
-
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             <span className="text-gradient">Technical Skills</span>
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto px-4">
             I've developed a diverse set of skills throughout my study and work experience, 
             allowing me to create comprehensive web solutions.
           </p>
 
-          <div className="flex justify-center items-center gap-4">
-            <IconCloud images={images} />
-            <SkillCardList tags={slugs} />
+          {/* Show IconCloud on larger screens, SkillTagList on mobile */}
+          <div className="relative">
+            {!isMobile ? (
+              <div className="flex justify-center items-center mb-8">
+                <IconCloud images={images} />
+              </div>
+            ) : (
+              <SkillTagList tags={slugs} />
+            )}
           </div>
 
-
-          
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Additional skill cards section can be uncommented if needed
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCard 
               icon={<Code2 size={32} />} 
               title="Front-end Development" 
@@ -141,24 +148,6 @@ const Skills = () => {
               icon={<Cpu size={32} />} 
               title="DevOps" 
               description="Git, Vetcel, AWS S3, CI/CD"
-            />
-            
-            <SkillCard 
-              icon={<Layers size={32} />} 
-              title="CMS" 
-              description="WordPress, Shopify, Contentful, Strapi"
-            />
-            
-            <SkillCard 
-              icon={<LayoutGrid size={32} />} 
-              title="State Management" 
-              description="Redux, Context API, Vuex, Recoil"
-            />
-            
-            <SkillCard 
-              icon={<Lock size={32} />} 
-              title="Authentication" 
-              description="OAuth, JWT, Firebase Auth, Role-based access control"
             />
           </div> */}
         </div>
