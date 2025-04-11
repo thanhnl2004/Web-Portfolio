@@ -62,16 +62,16 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center space-x-4">
           {/* <ThemeToggle /> */}
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+          <a href="https://github.com/thanhnguyen123-dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+          <a href="https://www.linkedin.com/in/thanh-nguyen-64b9a11a3" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
             <Linkedin size={20} />
           </a>
           <a href="https://www.instagram.com/_thanh.nl_/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 dark:text-gray-400 dark:hover:text-white transition-colors">
             <Instagram size={20} />
           </a>
-          <a href="mailto:your-email@example.com" className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors">
+          <a href="mailto:lethanh300504@gmail.com" className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors">
             <Mail size={20} />
           </a>
         </div>
@@ -119,13 +119,16 @@ const Navbar = () => {
             </button>
             
             <div className="flex items-center space-x-6 py-2">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+              <a href="https://github.com/thanhnguyen123-dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/thanh-nguyen-64b9a11a3" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:your-email@example.com" className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors">
+              <a href="https://www.instagram.com/_thanh.nl_/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 dark:text-gray-400 dark:hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="mailto:lethanh300504@gmail.com" className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors">
                 <Mail size={20} />
               </a>
             </div>
