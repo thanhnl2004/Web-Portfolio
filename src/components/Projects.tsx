@@ -141,7 +141,7 @@ const Projects = () => {
           </div>
           
           <div className="text-center mt-12">
-            <a href="https://github.com/thanhnguyen123-dev" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/thanhnguyen123-dev?tab=repositories" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="rounded-full">
                 View All Projects
               </Button>
