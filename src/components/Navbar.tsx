@@ -78,7 +78,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <Button
             variant="ghost"
             size="icon"

@@ -86,42 +86,42 @@ const Projects = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="E-commerce Platform"
-              description="A full-featured online store with product catalog, shopping cart, and payment integration."
-              tags={["React", "Node.js", "MongoDB", "Stripe"]}
-              imageUrl="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-              githubUrl="https://github.com"
+              title="Airtable Clone"
+              description="A full-stack database webapp that is easier to use than any other spreadsheets products."
+              tags={["Next.js", "tRPC", "PostgreSQL", "Prisma", "TypeScript", "TailwindCSS", "NextAuth.js"]}
+              imageUrl="/airtable-clone.png"
+              githubUrl="https://github.com/thanhnguyen123-dev/Airtable-Clone"
+              liveUrl="https://thanh-nguyen-airtable-clone.vercel.app"
+            />
+            
+            <ProjectCard 
+              title="Web Portfolio"
+              description="A portfolio website to showcase my experience, skills and projects."
+              tags={["React", "TypeScript", "TailwindCSS"]}
+              imageUrl="/portfolio-hero.png"
+              githubUrl="https://github.com/thanhnguyen123-dev/Web-Portfolio"
+              liveUrl="https://thanh-web-portfolio.vercel.app"
+            />
+            
+            <ProjectCard 
+              title="Air Traffic Control System"
+              description="A network simulation of an air traffic control system."
+              tags={["C", "Linux", "PThreads", "Multi-threading"]}
+              imageUrl="/network.jpg"
+              githubUrl="https://github.com/thanhnguyen123-dev/air-traffic-controller"
               liveUrl="https://example.com"
             />
             
             <ProjectCard 
-              title="Social Media Dashboard"
-              description="A responsive dashboard to monitor and analyze social media performance metrics."
-              tags={["React", "TypeScript", "Tailwind", "Chart.js"]}
-              imageUrl="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
+              title="Healthcare AI app"
+              description="An LLM-powered fullstack healthcare app that tracks patient health data and provides personalized recommendations."
+              tags={["React", "TailwindCSS", "Flask", "Python", "GeminiAPI"]}
+              imageUrl="/healthcare.png"
+              githubUrl="https://github.com/thanhnguyen123-dev/healthcare-app-backend"
+              liveUrl="https://health-app-opal.vercel.app"
             />
             
-            <ProjectCard 
-              title="Task Management App"
-              description="A productivity app for organizing tasks, setting deadlines, and tracking progress."
-              tags={["Vue.js", "Firebase", "Vuetify"]}
-              imageUrl="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            />
-            
-            <ProjectCard 
-              title="Weather Application"
-              description="A real-time weather forecast app with location detection and interactive maps."
-              tags={["JavaScript", "API Integration", "Geolocation"]}
-              imageUrl="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            />
-            
-            <ProjectCard 
+            {/* <ProjectCard 
               title="Portfolio Website"
               description="A personal portfolio website to showcase my projects and skills."
               tags={["React", "Tailwind CSS", "Framer Motion"]}
@@ -137,13 +137,15 @@ const Projects = () => {
               imageUrl="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               githubUrl="https://github.com"
               liveUrl="https://example.com"
-            />
+            /> */}
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="outline" className="rounded-full">
-              View All Projects
-            </Button>
+            <a href="https://github.com/thanhnguyen123-dev" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="rounded-full">
+                View All Projects
+              </Button>
+            </a>
           </div>
         </div>
       </div>

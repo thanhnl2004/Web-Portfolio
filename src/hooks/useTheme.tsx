@@ -29,12 +29,13 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     // Save theme to localStorage
     localStorage.setItem('theme', theme);
     
-    // Update document class for dark mode
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    // // Update document class for dark mode
+    // if (theme === 'dark') {
+    //   document.documentElement.classList.add('dark');
+    // } else {
+    //   document.documentElement.classList.remove('dark');
+    // }
+    document.documentElement.classList.remove('dark');
   }, [theme]);
 
   return (
