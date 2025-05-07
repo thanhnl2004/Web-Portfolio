@@ -86,6 +86,15 @@ const Projects = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
+              title="RateMyANU"
+              description="A social platform for ANU students to rate and review their courses."
+              tags={["Next.js", "React", "tRPC", "Prisma", "Supabase", "TailwindCSS"]}
+              imageUrl="/ratemyanu.png"
+              githubUrl="https://github.com/thanhnguyen123-dev/Rate-My-ANU"
+              liveUrl="https://ratemyanu.vercel.app"
+            />
+
+            <ProjectCard 
               title="Airtable Clone"
               description="A full-stack database webapp that is easier to use than any other spreadsheets products."
               tags={["Next.js", "tRPC", "PostgreSQL", "Prisma", "TypeScript", "TailwindCSS", "NextAuth.js"]}
@@ -120,24 +129,6 @@ const Projects = () => {
               githubUrl="https://github.com/thanhnguyen123-dev/healthcare-app-backend"
               liveUrl="https://health-app-opal.vercel.app"
             />
-            
-            {/* <ProjectCard 
-              title="Portfolio Website"
-              description="A personal portfolio website to showcase my projects and skills."
-              tags={["React", "Tailwind CSS", "Framer Motion"]}
-              imageUrl="https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            />
-            
-            <ProjectCard 
-              title="Blog Platform"
-              description="A content management system for creating and publishing blog articles."
-              tags={["Next.js", "GraphQL", "Prisma"]}
-              imageUrl="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
-            /> */}
           </div>
           
           <div className="text-center mt-12">

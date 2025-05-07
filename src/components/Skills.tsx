@@ -116,7 +116,7 @@ const Skills = () => {
           )}
 
           {/* Additional skill cards section can be uncommented if needed */}
-          {/*
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCard 
               icon={<Code2 size={32} />} 
@@ -154,7 +154,7 @@ const Skills = () => {
               description="Git, Vetcel, AWS S3, CI/CD"
             />
           </div> 
-          */}
+         
         </div>
       </div>
     </section>
