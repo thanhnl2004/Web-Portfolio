@@ -61,6 +61,17 @@ const formatTagName = (tag: string): string => {
   if (tag === "html5") return "HTML";
   if (tag === "css3") return "CSS";
   if (tag === "trpc") return "tRPC";
+  if (tag === "drizzle") return "Drizzle ORM";
+  if (tag === "springboot") return "Spring Boot";
+  if (tag === "figma") return "Figma";
+  if (tag === "androidstudio") return "Android Studio";
+  if (tag === "gitlab") return "GitLab";
+  if (tag === "github") return "GitHub";
+  if (tag === "git") return "Git";
+  if (tag === "vercel") return "Vercel";
+  if (tag === "docker") return "Docker";
+  if (tag === "postgresql") return "PostgreSQL";
+  if (tag === "supabase") return "Supabase";
   
   
   // Generic formatting - capitalize first letter and remove numbers

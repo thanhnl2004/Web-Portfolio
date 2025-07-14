@@ -86,7 +86,7 @@ const Footer = () => {
             
             <div className="flex space-x-4">
               <a 
-                href="https://github.com/thanhnguyen123-dev" 
+                href="https://github.com/thanhnl2004" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-white transition-colors"
@@ -94,7 +94,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/thanh-nguyen-64b9a11a3" 
+                href="https://www.linkedin.com/in/thanhnguyen2004" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-white transition-colors"

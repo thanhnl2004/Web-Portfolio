@@ -90,7 +90,7 @@ const Projects = () => {
               description="A social platform for ANU students to rate and review their courses."
               tags={["Next.js", "React", "tRPC", "Prisma", "Supabase", "TailwindCSS"]}
               imageUrl="/ratemyanu.png"
-              githubUrl="https://github.com/thanhnguyen123-dev/Rate-My-ANU"
+              githubUrl="https://github.com/thanhnl2004/Rate-My-ANU"
               liveUrl="https://ratemyanu.vercel.app"
             />
 
@@ -99,7 +99,7 @@ const Projects = () => {
               description="A full-stack database webapp that is easier to use than any other spreadsheets products."
               tags={["Next.js", "tRPC", "PostgreSQL", "Prisma", "TypeScript", "TailwindCSS", "NextAuth.js"]}
               imageUrl="/airtable-clone.png"
-              githubUrl="https://github.com/thanhnguyen123-dev/Airtable-Clone"
+              githubUrl="https://github.com/thanhnl2004/Airtable-Clone"
               liveUrl="https://thanh-nguyen-airtable-clone.vercel.app"
             />
             
@@ -108,7 +108,7 @@ const Projects = () => {
               description="A portfolio website to showcase my experience, skills and projects."
               tags={["React", "TypeScript", "TailwindCSS"]}
               imageUrl="/portfolio-hero.png"
-              githubUrl="https://github.com/thanhnguyen123-dev/Web-Portfolio"
+              githubUrl="https://github.com/thanhnl2004/Web-Portfolio"
               liveUrl="https://thanh-web-portfolio.vercel.app"
             />
             
@@ -117,7 +117,7 @@ const Projects = () => {
               description="A network simulation of an air traffic control system."
               tags={["C", "Linux", "PThreads", "Multi-threading"]}
               imageUrl="/network.jpg"
-              githubUrl="https://github.com/thanhnguyen123-dev/air-traffic-controller"
+              githubUrl="https://github.com/thanhnl2004/air-traffic-controller"
               liveUrl="https://example.com"
             />
             
@@ -126,13 +126,13 @@ const Projects = () => {
               description="An LLM-powered fullstack healthcare app that tracks patient health data and provides personalized recommendations."
               tags={["React", "TailwindCSS", "Flask", "Python", "GeminiAPI"]}
               imageUrl="/healthcare.png"
-              githubUrl="https://github.com/thanhnguyen123-dev/healthcare-app-backend"
+              githubUrl="https://github.com/thanhnl2004/healthcare-app-backend"
               liveUrl="https://health-app-opal.vercel.app"
             />
           </div>
           
           <div className="text-center mt-12">
-            <a href="https://github.com/thanhnguyen123-dev?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/thanhnl2004?tab=repositories" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="rounded-full">
                 View All Projects
               </Button>
