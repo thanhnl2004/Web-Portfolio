@@ -27,7 +27,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-background transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`min-h-screen bg-white transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <Navbar />
       <Hero />
       <About />

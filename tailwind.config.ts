@@ -142,9 +142,6 @@ export default {
     			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
     			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
     			orbit: 'orbit calc(var(--duration)*1s) linear infinite'
-    		},
-    		backgroundImage: {
-    			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
     		}
     	}
     },

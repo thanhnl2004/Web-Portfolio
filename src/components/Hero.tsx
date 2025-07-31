@@ -2,7 +2,6 @@
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InteractiveHoverButton } from '@/components/ui/interactive-button';
-import { Particles } from '@/components/ui/particles';
 import { ShimmerButton } from '@/components/magicui/shimmer-button';
 import { useEffect, useState } from 'react';
 
@@ -25,17 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Particles 
-          className="absolute inset-0 z-0" 
-          quantity={100} 
-          ease={80}
-          color="#000000" 
-        />
-      </div>
-      
-      <div className="absolute inset-0 bg-gradient-radial from-blue-50 to-transparent dark:from-blue-950/30 dark:to-transparent z-0 opacity-70"></div>
+    <section className="min-h-screen flex items-center justify-center relative">
       
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
