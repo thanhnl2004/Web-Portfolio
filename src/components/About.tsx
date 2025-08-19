@@ -65,13 +65,6 @@ const About = () => {
                   <h4 className="font-semibold">FPT Software</h4>
                   <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Nov 2024 - Jan 2025)</span></p>
                 </div>
-  
-                <div className="relative pl-8 border-l-2 border-blue-200">
-                  <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
-                  <h4 className="font-semibold">Australian National University</h4>
-                  <p className="text-sm font-semibold text-gray-500">Undergraduate Researcher <span className="font-normal">(May 2024 - Sep 2024)</span></p>
-                </div>
-
                                 
                 <div className="relative pl-8 border-l-2 border-blue-200">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
