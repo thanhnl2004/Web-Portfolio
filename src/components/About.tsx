@@ -42,19 +42,22 @@ const About = () => {
             <div className="bg-white rounded-2xl shadow-xl p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10 rounded-bl-full"></div>
               
-              <h3 className="text-xl font-semibold mb-6">Experience</h3>
-              
+              <h3 className="text-xl font-semibold mb-6">Experience</h3>              
               <div className="space-y-6">
                 <div className="relative pl-8 border-l-2 border-blue-200">
-                  <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
-                  <h4 className="font-semibold">Lyra Technologies</h4>
-                  <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Feb 2025 - Mar 2025)</span></p>
+                    <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
+                    <h4 className="font-semibold">National Institute of Education</h4>
+                    <p className="text-sm font-semibold text-gray-500">Software Engineer (Contract)<span className="font-normal">(Jul 2025 - Present)</span></p>
                 </div>
-                
                 <div className="relative pl-8 border-l-2 border-blue-200">
                   <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
-                  <h4 className="font-semibold">Pookie</h4>
-                  <p className="text-sm font-semibold text-gray-500">Software Engineer <span className="font-normal">(Feb 2025 - Present)</span></p>
+                  <h4 className="font-semibold">Australian National University</h4>
+                  <p className="text-sm font-semibold text-gray-500">Research Assistant<span className="font-normal">(Jul 2025 - Present)</span></p>
+                </div>
+                <div className="relative pl-8 border-l-2 border-blue-200">
+                  <div className="absolute left-[-8px] top-0 w-3 h-3 rounded-full bg-gray-500"></div>
+                  <h4 className="font-semibold">Lyra</h4>
+                  <p className="text-sm font-semibold text-gray-500">Software Engineer Intern <span className="font-normal">(Feb 2025 - Mar 2025)</span></p>
                 </div>
                 
                 <div className="relative pl-8 border-l-2 border-blue-200">
